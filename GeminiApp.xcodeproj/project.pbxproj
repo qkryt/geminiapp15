@@ -1,0 +1,162 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+		1000000129BB345600000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1000000129BB345600000002 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1000000129BB345600000003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1000000129BB345600000004 /* GeminiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeminiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1000000129BB345600000005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1000000129BB345600000006 /* AppDelegate.swift in Sources */,
+				1000000129BB345600000007 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1000000129BB345600000006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000129BB345600000001 /* AppDelegate.swift */; };
+		1000000129BB345600000007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000129BB345600000002 /* ViewController.swift */; };
+		1000000129BB345600000008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1000000129BB345600000009 /* GeminiApp */ = {
+			isa = PBXGroup;
+			children = (
+				1000000129BB345600000001 /* AppDelegate.swift */,
+				1000000129BB345600000002 /* ViewController.swift */,
+				1000000129BB345600000003 /* Info.plist */,
+			);
+			path = GeminiApp;
+			sourceTree = "<group>";
+		};
+		1000000129BB345600000010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1000000129BB345600000004 /* GeminiApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1000000129BB345600000011 /* MainGroup */ = {
+			isa = PBXGroup;
+			children = (
+				1000000129BB345600000009 /* GeminiApp */,
+				1000000129BB345600000010 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1000000129BB345600000012 /* NativeTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1000000129BB345600000013 /* BuildConfigurations */;
+			buildPhases = (
+				1000000129BB345600000005 /* Sources */,
+				1000000129BB345600000008 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeminiApp;
+			productName = GeminiApp;
+			productReference = 1000000129BB345600000004 /* GeminiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1000000129BB345600000013 /* BuildConfigurations */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1000000129BB345600000014 /* Debug */,
+				1000000129BB345600000015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1000000129BB345600000014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GeminiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.custom.geminiwrapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1000000129BB345600000015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GeminiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.custom.geminiwrapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1000000129BB345600000016 /* ProjectObject */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+			};
+			buildConfigurationList = 1000000129BB345600000017 /* ProjectConfigurations */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1000000129BB345600000011 /* MainGroup */;
+			productRefGroup = 1000000129BB345600000010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1000000129BB345600000012 /* NativeTarget */,
+			);
+		};
+		1000000129BB345600000017 /* ProjectConfigurations */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1000000129BB345600000018 /* Debug */,
+				1000000129BB345600000019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1000000129BB345600000018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1000000129BB345600000019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+	};
+	rootObject = 1000000129BB345600000016 /* ProjectObject */;
+}
