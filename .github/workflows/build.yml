@@ -1,7 +1,10 @@
-name: Build Gemini IPA
+name: Build and Release IPA
 
 on:
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -30,8 +33,12 @@ jobs:
           cp -R build/Build/Products/Release-iphoneos/GeminiApp.app Payload/
           zip -r GeminiApp.ipa Payload
 
-      - name: Upload IPA
-        uses: actions/upload-artifact@v4
+      - name: Create Release and Upload IPA
+        uses: softprops/action-gh-release@v1
         with:
-          name: GeminiApp-iOS15
-          path: GeminiApp.ipa
+          files: GeminiApp.ipa
+          tag_name: v1.0.${{ github.run_number }}
+          name: "Gemini iOS v1.0.${{ github.run_number }}"
+          body: "Автоматическая сборка клиента Gemini для iOS 15+"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
